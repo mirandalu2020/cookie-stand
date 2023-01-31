@@ -11,7 +11,7 @@ const salesByLocationFunctions = {
 
   customerNumber : //this function is min/max inclusive
   function (minCustomer, maxCustomer) {
-    minCustomer = Math.ceil(minCustomer);
+    minCustomer = Mgit ath.ceil(minCustomer);
     maxCustomer = Math.floor(maxCustomer);
     return Math.floor(Math.random() * (maxCustomer - minCustomer + 1) + minCustomer);},
 
