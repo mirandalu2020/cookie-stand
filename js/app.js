@@ -40,7 +40,11 @@ const seattleSales = {
   maxCustomer: 64,
   aveCookiesPerCustomer: 6.3,
   salesByHour: salesByLocationFunctions.customerPerHour(this.minCustomer, this.maxCustomer, this.aveCookiesPerCustomer),
-  // total: salesByLocationFunctions.totalSales(),git
+  // total: ,salesByLocationFunctions.totalSales()
+  // totalSales: 0,
+  // totalSalesMethod: function() {
+  //   let a = salesByLocationFunctions.totalSales();
+  //   this.totalSales = a;}
 }
 const tokyoSales = {
   name: 'Tokyo',
