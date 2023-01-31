@@ -26,32 +26,45 @@ const salesByLocationFunctions = {
     return(hourlySale); //randomly generated hourly sales
   },
 
+  totalSales : function (array = this.customerPerHour) {
+    let sum = array.reduce(function(a,b){return a+b;})
+    return sum;
+  }
+
 };
 
+//place each location Sales data into its own object
 const seattleSales = {
+  name: 'Seattle',
   minCustomer: 23,
   maxCustomer: 64,
-  aveCookiesPerCustomer: 6.4
+  aveCookiesPerCustomer: 6.3,
+  salesByHour: salesByLocationFunctions.customerPerHour(this.minCustomer, this.maxCustomer, this.aveCookiesPerCustomer),
+  // total: salesByLocationFunctions.totalSales(),
 }
 const tokyoSales = {
-  minCustomer: 23,
-  maxCustomer: 64,
-  aveCookiesPerCustomer: 6.4
-}
-const parisSales = {
-  minCustomer: 23,
-  maxCustomer: 64,
-  aveCookiesPerCustomer: 6.4
+  name: 'Tokyo',
+  minCustomer: 3,
+  maxCustomer: 24,
+  aveCookiesPerCustomer: 1.2,
 }
 const dubaiSales = {
-  minCustomer: 23,
-  maxCustomer: 64,
-  aveCookiesPerCustomer: 6.4
+  name: 'Dubai',
+  minCustomer: 11,
+  maxCustomer: 38,
+  aveCookiesPerCustomer: 3.7,
+}
+const parisSales = {
+  name: 'Paris',
+  minCustomer: 20,
+  maxCustomer: 38,
+  aveCookiesPerCustomer: 2.3,
 }
 const limaSales = {
-  minCustomer: 23,
-  maxCustomer: 64,
-  aveCookiesPerCustomer: 6.4
+  name: 'Lima',
+  minCustomer: 2,
+  maxCustomer: 16,
+  aveCookiesPerCustomer: 4.6,
 }
 
 
@@ -59,7 +72,8 @@ const limaSales = {
 function sumTotal (array) {
   let sum = array.reduce(function(a,b){return a+b;})
   return sum;
-} //console.log(sumTotal(salesByLocation.seattleSales));
+} 
+//console.log(sumTotal(salesByLocation.seattleSales));
 
 
 
@@ -84,11 +98,11 @@ li.textContent = (`Total: ${sumTotal(salesVal)} cookies`);
 }
 
 // word nightmare... but it's basically putting everything together from all the functions
-printToPage('Seattle', salesByLocationFunctions.customerPerHour (seattleSales.minCustomer, seattleSales.maxCustomer, seattleSales.aveCookiesPerCustomer));
-printToPage('Tokyo', salesByLocationFunctions.customerPerHour (tokyoSales.minCustomer, tokyoSales.maxCustomer, tokyoSales.aveCookiesPerCustomer));
-printToPage('Dubai',salesByLocationFunctions.customerPerHour (dubaiSales.minCustomer, dubaiSales.maxCustomer, dubaiSales.aveCookiesPerCustomer));
-printToPage('Paris', salesByLocationFunctions.customerPerHour (parisSales.minCustomer, parisSales.maxCustomer, parisSales.aveCookiesPerCustomer));
-printToPage('Lima',salesByLocationFunctions.customerPerHour (limaSales.minCustomer, limaSales.maxCustomer, limaSales.aveCookiesPerCustomer));
+printToPage(seattleSales.name, salesByLocationFunctions.customerPerHour (seattleSales.minCustomer, seattleSales.maxCustomer, seattleSales.aveCookiesPerCustomer));
+printToPage(tokyoSales.name, salesByLocationFunctions.customerPerHour (tokyoSales.minCustomer, tokyoSales.maxCustomer, tokyoSales.aveCookiesPerCustomer));
+printToPage(dubaiSales.name,salesByLocationFunctions.customerPerHour (dubaiSales.minCustomer, dubaiSales.maxCustomer, dubaiSales.aveCookiesPerCustomer));
+printToPage(parisSales.name, salesByLocationFunctions.customerPerHour (parisSales.minCustomer, parisSales.maxCustomer, parisSales.aveCookiesPerCustomer));
+printToPage(limaSales.name,salesByLocationFunctions.customerPerHour (limaSales.minCustomer, limaSales.maxCustomer, limaSales.aveCookiesPerCustomer));
 
 
 
