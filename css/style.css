@@ -1,0 +1,13 @@
+table {
+  border-collapse: collapse;
+  width: 180px;
+};
+
+th {
+  width:max-content
+}
+
+td {
+  width: 10%
+}
+
