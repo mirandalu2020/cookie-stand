@@ -20,15 +20,15 @@ function CitySales (name, minCustomer, maxCustomer, aveCookies) {
   }, //closing function randomNumber
 
   this.customerPerHour = function (arr = this.storeSales) {
+    let distribution = [0.5, 0.75, 1.0, 0.6, 0.8, 1.0, 0.7, 0.4, 0.6, 0.9, 0.7, 0.5, 0.3, 0.4];
     for (let hour=0; hour < workHours; hour++) {
       let citySales = this.randomNumber();
       //console.log(citySales);
-      citySales = Math.round(citySales * this.aveCookies);
+      citySales = Math.round(distribution[hour]*Math.round(citySales * this.aveCookies));
       arr.push(citySales);
       };
       return(arr);
-      
-    };//closing CustomerPerHour function
+    }; //closing CustomerPerHour function
 
   this.totalSales = function(arr = this.storeSales) {
     let totalSum = 0;
