@@ -1,3 +1,125 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+}
+header {
+  background-color: rgba(255, 127, 80, 0.74);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  /* border: 2px solid black; */
+  display: flex;
+  /* flex: 1 1 0px; */
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: stretch;
+  align-items: center;
+  margin: auto;
+  width: 960px;
+}
+nav ul li img{
+  height: 70px;
+  width: 100px;
+}
+
+nav ul {
+  display: flex;
+  /* align-items:stretch; */
+  margin: auto;
+  width: 960px;
+  height:100px;
+  justify-content: center;
+
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  margin:auto;
+  height:70px;
+  width: 20%;
+}
+
+nav ul li a {
+
+  color: rgb(22, 3, 3)
+}
+
+main {
+  /* background-color: bisque; */
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* to center the main container */
+  margin: auto;
+  margin-top: 30px;
+  
+  align-content: flex-start;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: rgb(238, 82, 10);
+}
+
+
+main figure {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+  width:900px;
+}
+
+main figure figcaption{
+  margin: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+section h3{
+  /* border: 2px solid black;*/
+  width: 100%;
+  margin: auto 0 30px 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+}
+
+#supportUs {
+  margin-top: 3rem;
+}
+
+section figure {
+  display: flex;
+  justify-content: space-around;
+}
+
+section figure img{
+  margin-bottom: 2rem;
+}
+
+
+
 table {
   border-collapse: collapse;
   width: 180px;
