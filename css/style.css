@@ -106,33 +106,25 @@ section h3{
 }
 
 #supportUs {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: flex-end;
   margin-top: 3rem;
+  width:auto;
 }
 
-section figure {
+#supportUs figure {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  width: 40%;
 }
 
 section figure img{
   margin-bottom: 2rem;
 }
 
-
-
-table {
-  border-collapse: collapse;
-  width: 180px;
-};
-
-th {
-  width:max-content
-}
-
-td {
-  width: 10%
-}
-
+/* Locations Section */
  #locations {
   background-color: rgba(255, 127, 80, 0.452);
   display: flex;
@@ -156,9 +148,7 @@ section ul{
   width: 960px;
 }
 
-
 section ul li {
-
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -168,6 +158,10 @@ section ul li {
   height:70px;
   width: 20%;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.247)
+}
+
+main section ul:hover{
+  background-color: antiquewhite;
 }
 
 footer {
@@ -180,4 +174,18 @@ footer {
   margin: auto;
   margin-bottom: 0;
   justify-content: center;
+}
+
+/* Sales Page */
+table {
+  border-collapse: collapse;
+  width: 180px;
+};
+
+th {
+  width:max-content
+}
+
+td {
+  width: 10%
 }
