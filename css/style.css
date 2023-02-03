@@ -178,8 +178,10 @@ footer {
 
 /* Sales Page */
 table {
-  border: 2px solid black;
+  border: 1px solid black;
   text-align:center;
+  border-collapse: separate;
+  border-spacing: 1px;
 }
 
 th, td {
@@ -196,6 +198,7 @@ fieldset {
   background-color:#CCC;
   max-width:100%;
   margin: 4rem 0 1rem 0;
+  
 }
 
 label {
