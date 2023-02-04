@@ -4,6 +4,6 @@
 
 ### Other Contributers: Anthony, Trey, Phil
 
-### Lab 9 LightHouse
+### Lab 10 LightHouse
 
 ![Alt text](img/SalmonCookiesLightHouse.png)
