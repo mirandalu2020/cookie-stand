@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -18,8 +19,43 @@
         <thead></thead>
         <tbody></tbody>
         <tfoot></tfoot>
-        
       </table>
+
+      <!-- create a form to allow user submitting data -->
+      <form>
+
+        <!-- What the screenreader can "see", does NOT activate the box because they aren't linked without the id attribute-->
+        <!-- 'for=id' muchst match the name of id on input id -->
+
+       
+        <fieldset>
+          <legend>New Stores</legend>
+
+          <label for="storeLocation">Store Location <input id="storeLocation" type="text" placeholder="Store Location" name="storeLocation"  required>
+
+          </label>
+          <!-- the placeholder does NOT work for screenreaders -->
+          <!-- method 2, make input a child of label -->
+         
+          <!-- added <name> attribute so JS can find the labvel -->
+          <label> Daily Minimum Customer
+            <input type="number" name="minCustomer" required>
+          </label>
+
+          <label> Daily Maximum Customer
+            <input type="number" name="maxCustomer" required>
+          </label>
+
+          <label> Average Cookies Sold per Customer
+            <input type="float" name="aveCookies" required>
+          </label>
+          
+        </fieldset>
+
+        <button type="submit" value="Submit">
+          Submit Form
+        </button>
+      </form>
 
     </div>
   </main>

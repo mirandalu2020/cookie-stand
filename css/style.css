@@ -1,13 +1,226 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+}
+header {
+  background-color: rgba(255, 127, 80, 0.74);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  /* border: 2px solid black; */
+  display: flex;
+  /* flex: 1 1 0px; */
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: stretch;
+  align-items: center;
+  margin: auto;
+  width: 960px;
+}
+nav ul li img{
+  height: 70px;
+  width: 100px;
+}
+
+nav ul {
+  display: flex;
+  /* align-items:stretch; */
+  margin: auto;
+  width: 960px;
+  height:100px;
+  justify-content: center;
+
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  margin:auto;
+  height:70px;
+  width: 20%;
+}
+
+nav ul li a {
+
+  color: rgb(22, 3, 3)
+}
+
+main {
+  /* background-color: bisque; */
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* to center the main container */
+  margin: auto;
+  margin-top: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  align-content: flex-start;
+  background-color: rgba(208, 255, 0, 0.212);
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: rgb(238, 82, 10);
+}
+
+
+main figure {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 30px;
+  width:900px;
+}
+
+main figure figcaption{
+  margin: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+section:hover{
+  background-color: rgba(208, 255, 0, 0.212);
+}
+
+section h3{
+  /* border: 2px solid black;*/
+  width: 100%;
+  margin: auto 0 30px 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:rgb(238, 141, 15);
+  font-size: 30px;
+}
+
+section h3:hover{
+  color:blue;
+  font-size: 50px;
+}
+
+#supportUs {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 3rem;
+  width:auto;
+  
+}
+
+#supportUs figure {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+section figure img{
+  margin-bottom: 2rem;
+}
+
+/* Locations Section */
+ #locations {
+  background-color: rgba(255, 127, 80, 0.452);
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  /* width: 960px; */
+  justify-content: stretch;
+}
+
+section ul{
+  /* border: 2px solid black; */
+  display: flex;
+  /* flex: 1 1 0px; */
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: stretch;
+  align-items: center;
+  margin: auto;
+  width: 960px;
+}
+
+section ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  margin:auto;
+  height:70px;
+  width: 20%;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.247)
+}
+
+main section ul:hover{
+  background-color: antiquewhite;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 127, 80, 0.452);
+  margin: auto;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+/* Sales Page */
 table {
-  border-collapse: collapse;
-  width: 180px;
-};
-
-th {
-  width:max-content
+  border: 1px solid rgb(238, 13, 13);
+  text-align:center;
+  border-collapse: separate;
+  border-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  width:100%;
 }
 
-td {
-  width: 10%
+th, td {
+  width: 300px;
+  height:50px;
+  border: 2px solid rgb(236, 9, 9);
 }
 
+fieldset {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color:#CCC;
+  max-width:100%;
+  margin: 4rem 0 1rem 0;
+  width:100%;
+}
+
+label {
+  display: inline;
+  width: 50%;
+}
+
+input {
+  display: inline;
+  width: 100%;
+}
