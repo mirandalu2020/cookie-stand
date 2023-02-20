@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
 }
+
 body{
   background-color: antiquewhite;
 }
@@ -122,7 +123,7 @@ section h3:hover{
   justify-content: space-around;
   align-items: flex-end;
   margin-top: 3rem;
-  width:auto;
+  width:100%;
   
 }
 
@@ -146,6 +147,7 @@ section figure img{
   font-family: Arial, Helvetica, sans-serif;
   /* width: 960px; */
   justify-content: stretch;
+  width: 100%;
 }
 
 section ul{
@@ -186,41 +188,4 @@ footer {
   margin: auto;
   margin-bottom: 0;
   justify-content: center;
-}
-
-/* Sales Page */
-table {
-  border: 1px solid rgb(238, 13, 13);
-  text-align:center;
-  border-collapse: separate;
-  border-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-  width:100%;
-}
-
-th, td {
-  width: 300px;
-  height:50px;
-  border: 2px solid rgb(236, 9, 9);
-}
-
-fieldset {
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color:#CCC;
-  max-width:100%;
-  margin: 4rem 0 1rem 0;
-  width:100%;
-}
-
-label {
-  display: inline;
-  width: 50%;
-}
-
-input {
-  display: inline;
-  width: 100%;
 }
